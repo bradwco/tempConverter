@@ -3,14 +3,14 @@ function getFTemp(){
     return parseInt(document.getElementById("Ftemp").value);
 }
 function setCTemp(fInput){
-    document.getElementById("Ctemp").value = (fInput-32)/1.8;
+    document.getElementById("Ctemp").value = ((fInput-32)/1.8).toFixed(3);
 }
 
 function getCTemp(){
     return parseInt(document.getElementById("Ctemp").value);
 }
 function setFTemp(cInput){
-    document.getElementById("Ftemp").value = (cInput*1.8)+32;
+    document.getElementById("Ftemp").value = ((cInput*1.8)+32).toFixed(3);
 }
 
 function invokingCelsiusDisplay(){
