@@ -6,10 +6,10 @@ app.use(express.static("./public"));
 // server responds when the client sends a GET request for the / endpoint
 
 app.get("/", function(req,res) {
-    res.sendFile(__dirname + "/home.html");
+    res.sendFile(__dirname + "/index.html");
 });
 app.post("/", function(req,res) {
-     res.sendFile(__dirname + "/game.html");
+     res.sendFile(__dirname + "/index.html");
 });
 
 
